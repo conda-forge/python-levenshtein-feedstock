@@ -1,8 +1,8 @@
-{%set name = "python-levenshtein" %}
-{%set camelName = "python-Levenshtein" %}
-{%set version = "0.12.0" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1" %}
+{% set name = "python-levenshtein" %}
+{% set camelName = "python-Levenshtein" %}
+{% set version = "0.12.0" %}
+{% set hash_type = "sha256" %}
+{% set hash_val = "033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1" %}
 
 package:
   name: {{ name }}
@@ -10,7 +10,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ camelName }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ camelName }}-{{ version }}.tar.gz
   {{ hash_type }}: {{ hash_val }}
 
 build:
@@ -22,9 +22,8 @@ build:
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
 
   run:
     - python
