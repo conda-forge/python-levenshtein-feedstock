@@ -31,7 +31,7 @@ test:
     - Levenshtein
   commands:
     # Trivial test to ensure compiled C code is indeed available
-    - {{ PYTHON }} -c "import sys; from Levenshtein import distance as d; assert 3==d('Good', 'Bad')"
+    - python -c "import sys; from Levenshtein import distance as d; assert 3==d('Good', 'Bad')"
 
 about:
   home: http://github.com/ztane/python-Levenshtein
