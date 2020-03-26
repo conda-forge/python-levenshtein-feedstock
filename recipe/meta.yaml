@@ -14,7 +14,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1001
+  number: 1002
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
@@ -35,7 +35,7 @@ test:
 
 about:
   home: http://github.com/ztane/python-Levenshtein
-  license: GPL-2.0
+  license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
   summary: 'Python extension for computing string edit distances and similarities.'
