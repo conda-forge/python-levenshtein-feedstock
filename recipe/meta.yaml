@@ -1,7 +1,7 @@
 {% set name = "python-levenshtein" %}
 {% set camelName = "python-Levenshtein" %}
-{% set version = "0.12.0" %}
-{% set hash_val = "033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1" %}
+{% set version = "0.12.1" %}
+{% set hash_val = "554e273a88060d177e7b3c1e6ea9158dde11563bfae8f7f661f73f47e5ff0911" %}
 
 package:
   name: {{ name }}
@@ -13,8 +13,8 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 1005
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -37,7 +37,7 @@ about:
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
-  summary: 'Python extension for computing string edit distances and similarities.'
+  summary: Python extension for computing string edit distances and similarities.
   description: |
     A Python extension written in C for fast computation of: Levenshtein (edit)
     distance and edit sequence manipulation; string similarity; approximate median
