@@ -1,7 +1,7 @@
 About python-levenshtein
 ========================
 
-Home: http://github.com/ztane/python-Levenshtein
+Home: https://github.com/maxbachmann/python-Levenshtein
 
 Package license: GPL-2.0-or-later
 
@@ -9,270 +9,28 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-levensht
 
 Summary: Python extension for computing string edit distances and similarities.
 
-Development: http://github.com/ztane/python-Levenshtein
+Development: https://github.com/maxbachmann/python-Levenshtein
 
-Documentation: https://rawgit.com/ztane/python-Levenshtein/master/docs/Levenshtein.html
+Documentation: https://github.com/maxbachmann/Levenshtein
 
 A Python extension written in C for fast computation of: Levenshtein (edit)
 distance and edit sequence manipulation; string similarity; approximate median
 strings, and generally string averaging; string sequence and set similarity.
 Levenshtein has a some overlap with difflib (SequenceMatcher). It supports
 only strings, not arbitrary sequence types, but on the other hand it's much
-faster.
+faster. Note the project was renamed, and python-Levenshtein is now just a
+metapackage installing the Levenshtein package.
 
 
 Current build status
 ====================
 
 
-<table>
-    
-  <tr>
-    <td>Azure</td>
+<table><tr><td>All platforms:</td>
     <td>
-      <details>
-        <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main">
-          </a>
-        </summary>
-        <table>
-          <thead><tr><th>Variant</th><th>Status</th></tr></thead>
-          <tbody><tr>
-              <td>linux_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_aarch64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_aarch64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>linux_ppc64le_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=linux&configuration=linux_ppc64le_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_arm64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=osx&configuration=osx_arm64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.10.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=win&configuration=win_64_python3.10.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.7.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=win&configuration=win_64_python3.7.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=win&configuration=win_64_python3.8.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.8.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9.____73_pypy</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=win&configuration=win_64_python3.9.____73_pypy" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>win_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main&jobName=win&configuration=win_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </details>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5723&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/python-levenshtein-feedstock?branchName=main">
+      </a>
     </td>
   </tr>
 </table>
@@ -398,6 +156,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@maxbachmann](https://github.com/maxbachmann/)
 * [@peterjc](https://github.com/peterjc/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 
