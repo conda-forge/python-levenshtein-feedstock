@@ -1,7 +1,7 @@
 {% set name = "python-levenshtein" %}
 {% set camelName = "python-Levenshtein" %}
-{% set version = "0.12.2" %}
-{% set hash_val = "dc2395fbd148a1ab31090dd113c366695934b9e85fe5a4b2a032745efd0346f6" %}
+{% set version = "0.20.4" %}
+{% set hash_val = "0ce52f1b2e151a727699cea66f629ba01c0315917b2926f224426f031e68fff9" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
