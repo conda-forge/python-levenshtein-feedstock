@@ -18,14 +18,14 @@ build:
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - {{ compiler('c') }}
+    - python
   host:
     - python
     - pip
+    - levenshtein
   run:
     - python
+    - levenshtein
 
 test:
   imports:
@@ -35,7 +35,7 @@ test:
     - python -c "import sys; from Levenshtein import distance as d; assert 3==d('Good', 'Bad')"
 
 about:
-  home: http://github.com/ztane/python-Levenshtein
+  home: https://github.com/maxbachmann/python-Levenshtein
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
@@ -46,9 +46,10 @@ about:
     strings, and generally string averaging; string sequence and set similarity.
     Levenshtein has a some overlap with difflib (SequenceMatcher). It supports
     only strings, not arbitrary sequence types, but on the other hand it's much
-    faster.
-  doc_url: https://rawgit.com/ztane/python-Levenshtein/master/docs/Levenshtein.html
-  dev_url: http://github.com/ztane/python-Levenshtein
+    faster. Note the project was renamed, and python-Levenshtein is now just a
+    metapackage installing the Levenshtein package. 
+  doc_url: https://github.com/maxbachmann/Levenshtein
+  dev_url: https://github.com/maxbachmann/python-Levenshtein
 
 extra:
   recipe-maintainers:
