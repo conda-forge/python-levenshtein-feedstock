@@ -22,10 +22,10 @@ requirements:
   host:
     - python
     - pip
-    - levenshtein=={{ version }}
+    - levenshtein =={{ version }}
   run:
     - python
-    - levenshtein=={{ version }}
+    - levenshtein =={{ version }}
 
 test:
   imports:
