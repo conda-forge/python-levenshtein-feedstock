@@ -1,7 +1,7 @@
 {% set name = "python-levenshtein" %}
 {% set camelName = "python-Levenshtein" %}
-{% set version = "0.12.2" %}
-{% set hash_val = "dc2395fbd148a1ab31090dd113c366695934b9e85fe5a4b2a032745efd0346f6" %}
+{% set version = "0.20.4" %}
+{% set hash_val = "0ce52f1b2e151a727699cea66f629ba01c0315917b2926f224426f031e68fff9" %}
 
 package:
   name: {{ name }}
@@ -13,19 +13,20 @@ source:
   sha256: {{ hash_val }}
 
 build:
-  number: 2
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
-    - python                                 # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - {{ compiler('c') }}
+    - python >=3.7
   host:
-    - python
+    - python >=3.7
     - pip
+    - levenshtein =={{ version }}
   run:
-    - python
+    - python >=3.7
+    - levenshtein =={{ version }}
 
 test:
   imports:
@@ -35,7 +36,7 @@ test:
     - python -c "import sys; from Levenshtein import distance as d; assert 3==d('Good', 'Bad')"
 
 about:
-  home: http://github.com/ztane/python-Levenshtein
+  home: https://github.com/maxbachmann/python-Levenshtein
   license: GPL-2.0-or-later
   license_family: GPL
   license_file: COPYING
@@ -46,11 +47,13 @@ about:
     strings, and generally string averaging; string sequence and set similarity.
     Levenshtein has a some overlap with difflib (SequenceMatcher). It supports
     only strings, not arbitrary sequence types, but on the other hand it's much
-    faster.
-  doc_url: https://rawgit.com/ztane/python-Levenshtein/master/docs/Levenshtein.html
-  dev_url: http://github.com/ztane/python-Levenshtein
+    faster. Note the project was renamed, and python-Levenshtein is now just a
+    metapackage installing the Levenshtein package. 
+  doc_url: https://github.com/maxbachmann/Levenshtein
+  dev_url: https://github.com/maxbachmann/python-Levenshtein
 
 extra:
   recipe-maintainers:
+    - maxbachmann
     - pmlandwehr
     - peterjc
