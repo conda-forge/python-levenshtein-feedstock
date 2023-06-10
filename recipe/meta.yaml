@@ -1,7 +1,7 @@
 {% set name = "python-levenshtein" %}
 {% set camelName = "python-Levenshtein" %}
-{% set version = "0.21.0" %}
-{% set hash_val = "c97f60e694dcfc4eae7fabc19490e0892b212d975d70d1b14fc109e58c33b0bf" %}
+{% set version = "0.21.1" %}
+{% set hash_val = "01ea6828c03738a475ee18ea8b86a674eb45ce80e9cce88376d132cf3ab26060" %}
 
 package:
   name: {{ name }}
