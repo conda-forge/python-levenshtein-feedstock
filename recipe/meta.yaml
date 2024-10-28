@@ -23,6 +23,7 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
     - levenshtein =={{ version }}
   run:
     - python >=3.7
