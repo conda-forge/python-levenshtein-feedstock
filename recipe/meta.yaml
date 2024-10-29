@@ -1,7 +1,7 @@
 {% set name = "python-levenshtein" %}
 {% set camelName = "python-Levenshtein" %}
-{% set version = "0.26.0" %}
-{% set hash_val = "b454dd13708546649f1cba2a0f450dd98e7c1679a92e2d6f0a8b8c013c276e55" %}
+{% set version = "0.26.1" %}
+{% set hash_val = "24ba578e28058ebb4afa2700057e1678d7adf27e43cd1f17700c09a9009d5d3a" %}
 
 package:
   name: {{ name }}
@@ -23,6 +23,7 @@ requirements:
   host:
     - python >=3.7
     - pip
+    - setuptools
     - levenshtein =={{ version }}
   run:
     - python >=3.7
