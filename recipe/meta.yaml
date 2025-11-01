@@ -42,7 +42,7 @@ about:
   home: https://github.com/maxbachmann/python-Levenshtein
   license: GPL-2.0-or-later
   license_family: GPL
-  license_file: COPYING
+  license_file: LICENSE
   summary: Python extension for computing string edit distances and similarities.
   description: |
     A Python extension written in C for fast computation of: Levenshtein (edit)
