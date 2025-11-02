@@ -2,6 +2,7 @@
 {% set camelName = "python-Levenshtein" %}
 {% set version = "0.27.3" %}
 {% set hash_val = "27dc2d65aeb62a7d6852388f197073296370779286c0860b087357f3b8129a62" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name }}
@@ -19,7 +20,7 @@ build:
 
 requirements:
   build:
-    - python >=3.7
+    - python >=3.10
   host:
     - python {{ python_min }}
     - pip
